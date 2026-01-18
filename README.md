@@ -4,35 +4,35 @@ A powerful Chrome Extension that tracks continuous time spent on distraction web
 
 ## Features
 
-✅ **Distraction Tracking** - Monitors time on:
+ **Distraction Tracking** - Monitors time on:
 - Xbox Cloud Gaming (xbox.com/play/*)
 - Netflix (netflix.com/*)
 - Prime Video (primevideo.com/*, amazon.com/gp/video/*)
 - Disney+ Hotstar (hotstar.com/*)
 
-✅ **Smart Time Tracking**
+ **Smart Time Tracking**
 - Only counts time when tab is **active** AND **window is focused**
 - Automatically pauses timer when switching tabs or minimizing browser
 - Resumes automatically when returning
 
-✅ **Alarm System**
+ **Alarm System**
 - Triggers real siren audio + optional TTS ("LOSER") when limit reached
 - Repeats every 30 seconds (configurable) until stopped
 - Persistent alarm state survives browser restart
 
-✅ **Beautiful UI**
+ **Beautiful UI**
 - Real-time timer display (HH:MM:SS)
 - Visual progress bar toward time limit
 - Start/Pause/Resume/Reset controls
 - Stop Alarm button during active alarm
 
-✅ **Customizable Settings**
+ **Customizable Settings**
 - Per-site tracking toggle
 - Configurable time limit (1-1440 minutes)
 - Configurable alarm interval (5-300 seconds)
 - Enable/disable TTS voice alarm
 
-✅ **MV3 Compliant**
+ **MV3 Compliant**
 - Uses Chrome Service Workers
 - Offscreen Document for audio playback
 - No external dependencies or CDNs
@@ -263,12 +263,12 @@ Expand the section to see real-time state information.
 
 ## Security & Privacy
 
-- ✅ No data sent to any server
-- ✅ No user tracking or analytics
-- ✅ All processing local to your browser
-- ✅ State stored only in Chrome's local storage
-- ✅ Cannot access other extension data
-- ✅ Minimal permissions requested
+-  No data sent to any server
+-  No user tracking or analytics
+-  All processing local to your browser
+-  State stored only in Chrome's local storage
+-  Cannot access other extension data
+-  Minimal permissions requested
 
 ## Future Enhancements
 
