@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loser Alarm - Popup</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <h1>Loser Alarm</h1>
+      <p class="subtitle">Distraction Time Tracker</p>
+    </div>
+
+    <!-- Current Site Display -->
+    <div class="site-display">
+      <div class="site-name" id="siteName">No site tracked</div>
+      <div class="site-icon" id="siteIcon">—</div>
+    </div>
+
+    <!-- Timer Display -->
+    <div class="timer-section">
+      <div class="timer" id="timer">00:00:00</div>
+      <div class="timer-label">Time Spent</div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-container">
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+      </div>
+      <div class="progress-text">
+        <span id="progressPercent">0%</span>
+        <span id="timeLimitDisplay">/ 3h 0m</span>
+      </div>
+    </div>
+
+    <!-- Status -->
+    <div class="status" id="status">
+      <span class="status-dot" id="statusDot"></span>
+      <span id="statusText">Idle</span>
+    </div>
+
+    <!-- Alarm Status -->
+    <div class="alarm-status" id="alarmStatusContainer" style="display: none;">
+      <div class="alarm-active">🚨 ALARM ACTIVE</div>
+    </div>
+
+    <!-- Control Buttons -->
+    <div class="button-group">
+      <button id="startBtn" class="btn btn-primary">Start</button>
+      <button id="pauseBtn" class="btn btn-secondary" disabled>Pause</button>
+      <button id="resumeBtn" class="btn btn-secondary" disabled>Resume</button>
+      <button id="resetBtn" class="btn btn-warning">Reset</button>
+    </div>
+
+    <!-- Alarm Control -->
+    <div class="button-group" id="alarmButtonGroup" style="display: none;">
+      <button id="stopAlarmBtn" class="btn btn-danger">Stop Alarm</button>
+    </div>
+
+    <!-- Settings Section -->
+    <div class="settings-section">
+      <h3>Settings</h3>
+      
+      <div class="setting-group">
+        <label for="limitInput">Time Limit (minutes):</label>
+        <input 
+          type="number" 
+          id="limitInput" 
+          min="1" 
+          max="1440" 
+          value="180"
+          class="input-field"
+        >
+        <button id="updateLimitBtn" class="btn btn-small">Update</button>
+      </div>
+
+      <div class="setting-group">
+        <label for="alarmIntervalInput">Alarm Interval (seconds):</label>
+        <input 
+          type="number" 
+          id="alarmIntervalInput" 
+          min="5" 
+          max="300" 
+          value="30"
+          class="input-field"
+        >
+        <button id="updateIntervalBtn" class="btn btn-small">Update</button>
+      </div>
+
+      <div class="setting-group checkbox">
+        <input type="checkbox" id="enableTtsToggle" checked>
+        <label for="enableTtsToggle">Enable TTS Alarm ("LOSER")</label>
+      </div>
+
+      <div class="site-toggles">
+        <h4>Track Per Site:</h4>
+        
+        <div class="toggle-item">
+          <input type="checkbox" id="trackXbox" checked>
+          <label for="trackXbox">Xbox Cloud Gaming</label>
+        </div>
+        
+        <div class="toggle-item">
+          <input type="checkbox" id="trackNetflix" checked>
+          <label for="trackNetflix">Netflix</label>
+        </div>
+        
+        <div class="toggle-item">
+          <input type="checkbox" id="trackPrime" checked>
+          <label for="trackPrime">Prime Video</label>
+        </div>
+        
+        <div class="toggle-item">
+          <input type="checkbox" id="trackHotstar" checked>
+          <label for="trackHotstar">Disney+ Hotstar</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Debug Info -->
+    <div class="debug-section">
+      <details>
+        <summary>Debug Info</summary>
+        <pre id="debugInfo">Loading...</pre>
+      </details>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

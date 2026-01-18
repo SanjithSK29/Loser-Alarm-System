@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Loser Alarm",
+  "version": "1.0.0",
+  "description": "Tracks continuous time on distraction websites and triggers an alarm after 3 hours",
+  "permissions": [
+    "storage",
+    "tabs",
+    "offscreen",
+    "alarms",
+    "tts"
+  ],
+  "host_permissions": [
+    "*://www.xbox.com/*",
+    "*://www.netflix.com/*",
+    "*://www.primevideo.com/*",
+    "*://www.amazon.com/*",
+    "*://www.hotstar.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Loser Alarm"
+  },
+  "icons": {
+    "16": "images/icon-16.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  }
+}
