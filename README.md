@@ -1,9 +1,11 @@
 # Loser Alarm - Chrome Extension (MV3)
 
-A powerful Chrome Extension that tracks continuous time spent on distraction websites and triggers an audio + TTS alarm after a configurable time limit (default: 3 hours).
+A powerful Chrome Extension that tracks continuous time spent on distraction websites and triggers an audio (a man yelling LOSERRRR at your face) + TTS alarm after a configurable time limit (default: 3 hours).
 
 ## Features
-
+ **Man yells at you for wasting time** - 
+ - beautiful audio of a man screaming LOSER every time you spend too much time playing Xbox
+   
  **Distraction Tracking** - Monitors time on:
 - Xbox Cloud Gaming (xbox.com/play/*)
 - Netflix (netflix.com/*)
